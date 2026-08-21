@@ -10,18 +10,18 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     $dbname = "madrasa_new";
    
     // Report all PHP errors
-error_reporting(E_ALL);
+    error_reporting(E_ALL);
 
-// Display errors on the screen
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
+    // Display errors on the screen
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
 } else {
-    // Live server configuration
-    $servername = "localhost";
-    $username = "softray1_alfarooqia"; // <-- Confirm this is correct
-    $password = "alfaaroqia123!@#$%^&*()";
-    $dbname = "softray1_alfarooqia";
-   // echo "Environment: Live Server\n";
+    // Live server configuration (InfinityFree)
+    $servername = "sql207.infinityfree.com";  // InfinityFree MySQL hostname
+    $username = "if0_42714877";               // Your InfinityFree MySQL username
+    $password = "Rockstar9530";               // Your InfinityFree MySQL password (replace with actual)
+    $dbname = "if0_42714877_XXX";             // Your InfinityFree database name (replace XXX with actual)
+    // Optional: $port = 3306;                // Default port, no need to specify
 }
 
 // echo "Server: $servername\n";
